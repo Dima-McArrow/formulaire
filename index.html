@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Bootstrap/bootstrap.css" />
+    <script src="./Bootstrap/bootstrap.bundle.min.js" defer></script>
+    <script src="./scripts/main.js" defer></script>
+    <title>formulaire HTML JS Bootstrap</title>
+    <link rel="icon" type="image/x-icon" href="./media/form-elements-svgrepo-com.svg">
+  </head>
+  <body>
+    <div
+      class="container d-flex flex-column min-vh-100 justify-content-center align-items-center"
+    >
+      <h1 class="mb-5">Formulaire</h1>
+      <form class="row g-3 needs-validation" id="lessonForm" novalidate>
+        <div class="col-md-6">
+          <label for="firstName" class="form-label">Prénom</label>
+          <input
+            type="text"
+            class="form-control"
+            name="firstName"
+            id="firstName"
+          />
+          <div class="invalid-feedback">Veuillez saisir votre prénom.</div>
+        </div>
+        <div class="col-md-6">
+          <label for="lastName" class="form-label">Nom</label>
+          <input
+            type="text"
+            class="form-control"
+            name="lastName"
+            id="lastName"
+          />
+          <div class="invalid-feedback">Veuillez saisir votre nom.</div>
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" class="form-control" name="email" id="email" />
+          <div class="invalid-feedback">Veuillez saisir votre e-mail.</div>
+        </div>
+        <div class="col-md-6">
+          <label for="phoneNumber" class="form-label">Téléphone</label>
+          <input
+            type="tel"
+            class="form-control"
+            name="phoneNumber"
+            id="phoneNumber"
+          />
+          <div class="invalid-feedback">
+            Veuillez saisir votre numéro de téléphone.
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="address" class="form-label">Adresse</label>
+          <input type="text" class="form-control" name="address" id="address" />
+          <div class="invalid-feedback">Veuillez saisir votre adresse.</div>
+        </div>
+        <div class="col-md-6">
+          <label for="city" class="form-label">Ville</label>
+          <select class="form-select" name="city" id="city">
+            <option selected disabled value="">Votre ville ...</option>
+            <option>Paris</option>
+            <option>Lyon</option>
+            <option>Marseille</option>
+            <option>Lille</option>
+          </select>
+          <div class="invalid-feedback">Veuillez choisir une ville.</div>
+        </div>
+        <div class="col-md-6">
+          <label for="postCode" class="form-label">Code postal</label>
+          <input
+            type="text"
+            class="form-control"
+            name="postCode"
+            id="postCode"
+          />
+          <div class="invalid-feedback">Veuillez saisir votre code postal.</div>
+        </div>
+        <div class="col-12">
+          <div class="mb-3 form-check">
+            <label class="form-check-label" for="conditions"
+              >J'accepte les conditions</label
+            >
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="conditions"
+              name="conditions"
+            />
+            <div class="invalid-feedback">
+              Merci de lire les conditions avant de valider le formulaire.
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary w-25">Valider</button>
+      </form>
+    </div>
+  </body>
+</html>
